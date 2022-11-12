@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+</head>
+<body onload="generate()">
+    
+    <div class="header">
+        <span>Hello</span>
+
+        <p>Everyone...</p>
+    </div>
+    
+    <div class="about">
+        Hello didi how are you ? How is IIITDMJ ?
+        <br></br>
+
+        Make my <a target="_blank" href="https://www.youtube.com/channel/UCN7Lo2yjOFomJLDpAxxcSMw">channel's</a> subscibers increase
+        <br></br>
+        Well thats all I am going to say for my channel.
+        <br></br>
+        I am going to host this website and this can be viewed from all over the world.
+        <br></br>
+        Well here click the button below to see the magic.
+        <br></br>
+        <button class="sub" onclick="location.href='https://www.youtube.com/channel/UCN7Lo2yjOFomJLDpAxxcSMw?sub_confirmation=1'"><a target="_blank" href="https://www.youtube.com/channel/UCN7Lo2yjOFomJLDpAxxcSMw?sub_confirmation=1"> Click here!</a></button>
+        <br></br>
+    </div>
+    <div class="about-me">
+        <h2>About Me :</h2>
+        <div class="about-me-all">
+            Hello I am Tanay,<br> a student of class 9th at <b>Hillman Public School, Agra</b> and I am capable to develop any website either on <b>React</b> or on normal <b>HTML</b>.
+            <br></br>
+            My hobbies are <b>Game development, Blockchain development, Website develpment, Augmented reality, Animation, <i>Coding, Coding, Coding...</i></b>
+            <br></br>
+            <i>Anywhere possible or not I always do coding even <b>in my dreams</b> and also when I sit IDLE then, <b>in my mind I do coding</b> and think of new projects to make <b>of any field either android application, any website or any softwate on computer</b>.</i>
+            <br></br>
+            <h2>My projects :</h2>
+            Python package built by me <b>cvlearn</b>:
+            <ul>
+                <li><a target="_blank" href="https://github.com/Tanay-ErrorCode/cvlearn">Github</a></li>
+                <li><a target="_blank" href="https://pypi.org/project/cvlearn/">PyPi</a></li>
+            </ul>
+            <br>
+            My package <b>Blockchain Quote application</b>:
+            <ul>
+                <li><a target="_blank" href="https://github.com/Tanay-ErrorCode/Quote-Application">Github</a></li>
+            </ul>
+            <br>
+            My <b>Coumputer vision projects</b>:
+            <ul>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=3ya0aH6v-1M">Face to emoji</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=5C0GmT1vQU0">Hand tracking and Finger counting</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=UJyNqh_pgQI">Face detection and Face mesh</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=UJyNqh_pgQI">Face detection and Face mesh</a></li>
+            </ul>
+            <br>
+            My <b>Game development projects</b>:
+            <ul>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=1uJDWUtNfvw">3D Snake game</a></li>
+            </ul>
+            <br>
+            My <b>Computer softwares</b>:
+            <ul>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=8bgisVATfns">Paint App</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=RGhTbXIH80c">Clock App</a></li>
+            </ul>
+            <br>
+            <a target="_blank" href="https://www.linkedin.com/in/errorcode"><img src="https://img.shields.io/badge/MY_LinkedIn-fff?style=for-the-badge&logo=linkedin&logoColor=cyan" alt="" ></a>
+            <a href="https://stackoverflow.com/users/17675859/tanay" target="_blank"><img src="https://img.shields.io/badge/Stack_Overflow-fff?style=for-the-badge&logo=stackoverflow&logoColor=orange" alt=""></a>
+            <a href="https://github.com/Tanay-ErrorCode" target="_blank"><img src="https://img.shields.io/badge/GitHub-fff?style=for-the-badge&logo=github&logoColor=black" alt=""></a>
+
+        </div>
+        
+
+    </div>
+    <div class="comments" id="comme">
+        <div id="comments" class="card-home"></div>
+    </div>
+    <div class="addComment">
+        <div class="add">
+            <h3>Add comment : </h3>
+            
+            <input type="text" placeholder="Comment..." id="commentInp">
+            <button class="addCommentBtn" onclick="saveComment()">Add</button>
+        </div>
+    </div>
+    
+
+    <footer>Thank you for visiting</footer>
+    
+</body>
+
+<script src="app.js"></script>
+</html>
