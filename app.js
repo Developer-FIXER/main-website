@@ -44,7 +44,6 @@ function generate(){
         appId: "1:871628818258:web:10ef825c5c524dbb095c8b",
         measurementId: "G-5GZBCHNX5P",
         databaseURL: "https://js-comments-4456d-default-rtdb.firebaseio.com/"
-
     };
     
     // Initialize Firebase
