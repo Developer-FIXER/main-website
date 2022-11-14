@@ -78,12 +78,11 @@ footer{
     100%{filter: hue-rotate(0deg);}    
 }
 .comments{
-    position: relative;
+    /* position: relative; */
     background-color: rgb(220, 255, 220);
     padding: 3px;
-    min-height: 250px;
-    overflow-y: scroll;
-    overflow: hidden;
+    height: 250px;
+    overflow:auto;
 }
 .comment{
     display: block;
@@ -93,17 +92,16 @@ footer{
     margin: 1px;
     border: 1px solid salmon;
     min-height: 20px;
+    width:92%;
 }
+
+
+
 .message{
     display: block;
 
 }
-.card-home{
-    position: absolute;
-    top: 0;
-    animation: scroll 10s linear 1s infinite;
-    width: 100%;
-}
+
 
 .addComment{
     background-color: rgb(220, 255, 220);
@@ -112,7 +110,7 @@ footer{
 .add{
     background-color: white;
     padding: 20px;
-    margin-top: -4%;
+    margin-top: 0px;
     padding-top: 30px;
 }
 .add input {
@@ -121,20 +119,20 @@ footer{
     padding: 5px;
     border-radius: 10px;
     margin: 10px;
-    font-size: 20px;
+    font-size: 150%;
+    height: max-content;
+
 }
 .addCommentBtn{
-    margin-top: 2%;
-    width: 30%;
+    width: 21%;
     font-size: 110%;
     border: none;
     border-radius: 100px;
     padding: 10px;
-
+    margin-top: 10px;
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
     linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
     linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-    float: right;
     color: white;
     font-weight: bolder;
     animation: flash 2s infinite;
@@ -143,12 +141,28 @@ footer{
     display: inline-flex;
 
 }
+.message-text {
+    min-height: 1em; /* prevent height collapsing when there is no text */
+    max-height: 97px;
+    width: 100%;
+    align-content: center;
+    outline: none;
+    overflow: hidden;
+
+  }
+  
+.message-wrapper {
+    
+    width: 80%;
+    border: 1px solid #e4e7ec;
+    border-radius: 20px;
+    background-color: #f9fafb;
+    padding: 24px; /* the container will keep the padding untouched */
+    max-height: 145px; /* added padding to the height of the .message-text */
+    font-size: 20px;
+}
 /* .card-home{
     position:absolute;
       top:0;
         animation: scroll 10s linear 1s infinite;
   } */
-@keyframes scroll {
-    /*   top is the number of spans (in this case 8) multiplied by span height (45px as described above) */
-    100% { top: -100%; }
-}

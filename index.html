@@ -8,6 +8,8 @@
     <title>Document</title>
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </head>
 <body onload="generate()">
     
@@ -80,19 +82,22 @@
         
 
     </div>
-    <div class="comments" id="comme">
-        <div id="comments" class="card-home"></div>
+    <div class="comments" id="comments">
+        <!-- <div id="comments" class="card-home"></div> -->
     </div>
     <div class="addComment">
         <div class="add">
             <h3>Add comment : </h3>
             
-            <input type="text" placeholder="Comment..." id="commentInp">
+            <!-- <input type="text" placeholder="Comment..." id="commentInp"> -->
+            <div>
+                <div class="message-wrapper">
+                    <div class="message-text" contentEditable id="commentInp"></div>        
+            </div>
             <button class="addCommentBtn" onclick="saveComment()">Add</button>
         </div>
     </div>
-    
-
+    <!-- <div class="notification">Please try after some time!</div> -->
     <footer>Thank you for visiting</footer>
     
 </body>
